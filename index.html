@@ -1,121 +1,165 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Peter's Page</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-
-  <!-- header -->
-<header id="site-header">
-
+    <!-- header -->
+    <header id="site-header">
       <!-- logo -->
       <a id="logo" href="index.html">
-        <img src="img/pic.png" alt="Logo">
+        <img src="img/pic.png" alt="Logo" />
         Peter's Page
       </a>
 
       <!-- main navigation -->
       <nav id="main-navigation">
         <ul>
-          <li> <a href="#push-second">About Me</a> </li>
-          <li> <a href="#push-first">Projects</a> </li>
+          <li><a href="#push-second">About Me</a></li>
+          <li><a href="#push-first">Projects</a></li>
         </ul>
       </nav>
-</header>
-      <!-- Main -->
-      <main id="site-main">
+    </header>
+    <!-- Main -->
+    <main id="site-main">
+      <!-- hero section -->
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Peter Rassias</h1>
+          <p>
+            2020 Computer Science Graduate (Second Degree) <br />at the
+            University of British Columbia
+          </p>
+          <a href="#push-first">Projects</a>
+          <a href="#push-second">Learn More</a>
+        </div>
+      </div>
 
-            <!-- hero section -->
-            <div class="hero">
-              <div class="hero-content">
-                <h1 class="hero-title">Peter Rassias</h1>
-                <p>3rd Year Computer Science Student <br>at the University of British Columbia</p>
-                <a href="#push-first">Projects</a>
-                <a href="#push-second">Learn More</a>
+      <!-- features -->
+      <section id="push-first" class="site-section">
+        <div class="site-section-inside">
+          <div class="section-header">
+            <h2>My Favourite Projects</h2>
+          </div>
 
-              </div>
+          <div class="feature-box">
+            <img src="img/comp.png" alt="This Website" />
+            <h5>This Website</h5>
+            <p>
+              This website was made entirely from scratch using HTML and CSS.
+            </p>
+          </div>
 
+          <div
+            class="feature-box clickable"
+            href="https://peterr101.github.io/front-end-clothing-company-site/"
+          >
+            <a
+              href="https://peterr101.github.io/front-end-clothing-company-site/"
+            >
+              <img src="img/shopping.png" alt="UI" />
+              <h5>User Interface for Fashion Brand</h5>
+              <p>
+                A modern and sleek design that automatically resizes to fit
+                screen size. My most recent personal project to gain expierence
+                with react and design decisions. Integration of Formik, yup, and
+                EmailJs for form submission and validation. Uses gsap library
+                for elegant animations and React Router for declarative routing
+                of contact, terms, and various other pages. Click to view!
+              </p>
+            </a>
+          </div>
+
+          <div class="feature-box">
+            <img src="img/bookmark.png" alt="Bookmarker" />
+            <h5>Bookmarker</h5>
+            <p>
+              A bookmarking web application that stores links to your favorite
+              sites.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <img src="img/exam.png" alt="FTP Server" />
+            <h5>File Transfer Protocol Server</h5>
+            <p>
+              This FTP server written in C establishes a listening socket and
+              handles client connections using pthreads. It is capable of
+              handling client commands such as changing the current directory
+              using an operating system call, user authentication, and file
+              transfer using a secondary passive connection strictly for data
+              transfer.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <img src="img/file-upload.png" alt="FTP Client" />
+            <h5>File Transfer Protocol Client</h5>
+            <p>
+              An FTP client written in Java that establishes a connection to a
+              FTP server. It accepts command line instructions from the user and
+              submits the appropriate FTP commands to the server to facilitate
+              file transfer.
+            </p>
+          </div>
+
+          <div id="bus" class="feature-box">
+            <img src="img/bus.png" alt="BusFinder" />
+            <h5>BusFinder</h5>
+            <p>
+              The all in one android application that accesses real time
+              information from Translink for all of the stops, routes, and buses
+              nearest to your location, right at your fingertips.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials -->
+      <section id="push-second" class="site-section site-section-secondary">
+        <div class="site-section-inside">
+          <div class="section-header">
+            <h2>A Little Bit About Me</h2>
+          </div>
+
+          <div class="testimonial-box">
+            <div class="testimonial-content">
+              &nbsp;&nbsp;&nbsp;&nbsp; I am a recently graduated Computer
+              Science student from the University of British Columbia. Prior to
+              my current degree, I completed a Bachelor of Science with a major
+              in biology. My first degree fed my fascination for technology and
+              led me to transition into the field of computer science. I have
+              completed projects in Java, C, and Typescript during my
+              educational career and have experimented with HTML, CSS,
+              Javascript, and React for my personal projects.<br /><br />
+
+              &nbsp;&nbsp;&nbsp;&nbsp;During my time off work, I enjoy
+              travelling and having the opportunity to experience new cultures
+              and develop relationships with people across the globe. I also
+              enjoy giving back to my community and participating in various on
+              and off-campus activities such as sports challenges, hackathons,
+              and volunteer opportunities. I will leave you with my favourite
+              video from my travels so far; it's a video of me jumping off a
+              waterfall in Croatia!
             </div>
 
-
-            <!-- features -->
-            <section id="push-first" class="site-section">
-              <div class="site-section-inside">
-
-              <div class="section-header">
-                <h2>Projects</h2>
-              </div>
-
-              <div class="feature-box">
-                <img src="img/comp.png" alt="This Website">
-                <h5>This Website</h5>
-                <p>This website was made entirely from scratch using HTML and CSS.</p>
-              </div>
-
-              <div class="feature-box">
-                <img src="img/bookmark.png" alt="Bookmarker">
-                <h5>Bookmarker</h5>
-                <p>A bookmarking web application that stores links to your favorite sites.</p>
-              </div>
-
-              <div class="feature-box">
-                <img src="img/exam.png" alt="LSAT Solver">
-                <h5>LSAT Solver</h5>
-                <p>This program systematically solves the Circus game, a particular problem question featured on LSAT exams.</p>
-              </div>
-
-              <div id="bus" class="feature-box">
-                <img src="img/bus.png" alt="BusFinder">
-                <h5>BusFinder</h5>
-                <p>The all in one android application that accesses real time information from Translink for all of the stops, routes, and buses nearest to your location, right at your fingertips.  </p>
-              </div>
-
+            <div class="thevideos">
+              <video class="thevideo" controls="">
+                <source src="img/waterfallcomp.mp4" type="video/mp4" />
+                Your browser does not support the video player.
+              </video>
             </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            </section>
-            <!-- testimonials -->
-            <section id="push-second" class="site-section site-section-secondary">
-              <div class="site-section-inside">
-
-              <div class="section-header">
-                <h2>A Little Bit About Me</h2>
-              </div>
-
-              <div class="testimonial-box">
-                <div class="testimonial-content">
-                &nbsp;&nbsp;&nbsp;&nbsp;  I am currently a third-year Computer Science student at the University of British Columbia. Prior to my current degree, I completed a Bachelor of Science with a major in biology. My first degree inspired my fascination with technology and led me to transition into the field of computer science.
-
-  I have completed projects in Racket and Java during my educational career and have experimented with HTML, CSS, and Javascript for my own personal projects.<br><br>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;During my time off work, I enjoy travelling and having the opportunity to experience new cultures and develop relationships with people across the globe. I also enjoy giving back to my community and participating in various on and off-campus activities such as sports challenges, hackathons, and volunteer opportunities. I will
-  leave you with my favourite video from my travels so far; it's a video of me jumping off a waterfall in Croatia last summer!
-
-                </div>
-
-                <div class="thevideos">
-
-                <video class="thevideo" controls="">
-  <source src="img/waterfallcomp.mp4" type="video/mp4" />
-Your browser does not support the video player.
-               </video>
-                 </div>
-
-              </div>
-
-            </div>
-            </section>
-      </main>
-
-      <!-- footer -->
-      <header id="footer">
-        <span>Peter's Website<br>Copyright &copy; 2018-2020 </span>
-
-      </header>
-
+    <!-- footer -->
+    <header id="footer">
+      <span>Peter's Website<br />Copyright &copy; 2018-2020 </span>
+    </header>
   </body>
 </html>
